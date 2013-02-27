@@ -1,3 +1,4 @@
+var settings = require('ep_etherpad-lite/node/utils/Settings');
 var path = require('path');
 var eejs = require('ep_etherpad-lite/node/eejs');
 
@@ -6,7 +7,9 @@ exports.expressCreateServer = function (hook_name, args, cb) {
   //serve index.html under /
   args.app.get('/', function(req, res)
   {
-    res.send(eejs.require("ep_etherpad-lite/templates/index.html"));
+    console.log('access to main site. redirecting user to %s', settings.ep_auth.auth_failure);
+    res.redirect(settings.ep_auth.auth_failure);
+    //res.send(eejs.require("ep_etherpad-lite/templates/index.html"));
   });
 
   //serve robots.txt
