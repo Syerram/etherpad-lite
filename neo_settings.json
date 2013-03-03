@@ -29,23 +29,15 @@
 
   */
 
-  //The Type of the database. You can choose between dirty, postgres, sqlite and mysql
-  //You shouldn't use "dirty" for for anything else than testing or development
-  "dbType" : "dirty",
-  //the database specific settings
-  "dbSettings" : {
-                   "filename" : "var/dirty.db"
-                 },
                  
-  /* An Example of MySQL Configuration
-   "dbType" : "mysql",
+  "dbType" : "mongodb",
    "dbSettings" : {
-                    "user"    : "root", 
-                    "host"    : "localhost", 
-                    "password": "", 
-                    "database": "store"
+                    "user"    : "epl",
+                    "host"    : "localhost",
+                    "port"    : 27017,
+                    "password": "BShzKh$43g",
+                    "dbname": "kipinhall_notes"
                   },
-  */
   
   //the default text of a pad
   "defaultPadText" : "Welcome to Kipinhall Notes. You can collaboratively edit notes with your classmates. What you waiting for? Type away",
@@ -80,13 +72,9 @@
   
   "users": {
     "admin": {
-      "password": "changeme1",
+      "password": "JWq0qj8#hW",
       "is_admin": true
     },
-    "user": {
-      "password": "changeme1",
-      "is_admin": false
-    }
   },
   
 
@@ -98,6 +86,6 @@
 
   //ep_auth
   "ep_auth" : {
-    "auth_failure": "http://kipinhall-local.com/401/"
+    "auth_failure": "http://kipinhall.com/401/"
   }
 }

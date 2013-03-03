@@ -1,0 +1,5 @@
+# File overrides
+
+Due to my meek knowledge on NPM installs and using github for source installs, the folder contains overrides of files that will get copied onto the `node_modules`.
+For e.g. in ueberDB, a small change in mongodb init db was made. But since we do not checkin the `node_modules` into src control, we need a placeholder to store such files.
+During prod deployment, we will then copy over these files after calling `installDep.sh`

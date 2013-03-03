@@ -16,3 +16,4 @@ npm-debug.log
 .ep_initialized
 *.crt
 *.key
+*.tar.gz
