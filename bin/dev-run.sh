@@ -11,9 +11,9 @@ fi
 #Stop the script if its started as root
 if [ "$(id -u)" -eq 0 ]; then
    echo "You shouldn't start Etherpad-Lite as root!"
-   echo "Please type 'Etherpad Lite rocks my socks' if you still want to start it as root"
+   echo "'yay' if you still want to start it as root"
    read rocks
-   if [ ! $rocks = "Etherpad Lite rocks my socks" ]
+   if [ ! $rocks = "yay" ]
    then
      echo "Your input was incorrect"
      exit 1

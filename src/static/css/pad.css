@@ -808,7 +808,7 @@ input[type=checkbox] {
       display: none;
     }
     .toolbar ul li a {
-      padding: 4px 1px
+      padding: 4px 4px
     }
 }
 @media screen and (max-width: 400px){

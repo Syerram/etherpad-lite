@@ -113,6 +113,8 @@ exports.requireAuthentication = false;
 exports.requireAuthorization = false;
 exports.users = {};
 
+exports.domain = 'localhost';
+
 //checks if abiword is avaiable
 exports.abiwordAvailable = function()
 {

@@ -87,5 +87,7 @@
   //ep_auth
   "ep_auth" : {
     "auth_failure": "http://kipinhall.com/401/"
-  }
+  },
+
+  "domain": "alpha.kipinhall.com"
 }
